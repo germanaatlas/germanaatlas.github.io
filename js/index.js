@@ -11,6 +11,7 @@ $("#ttb").click(function(){
     console.log(tbinput);
     console.log(tboutput);
     $("#textsol").html(tboutput)
+    document.getElementById("textsolcard").innerHTML += '<div class="row"><div class="col-12"><p>'+tbinput+' -- '+tboutput+'</p></div></div><br>';
 });
 //Binary to Text
 /*$("#btt").click(function() {
