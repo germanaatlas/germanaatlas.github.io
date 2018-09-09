@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+        <title>Videospielsammlung</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Videospielsammlung</h1>
+            <div class="row">
+                <div class="col-3">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="vsname" placeholder="Name">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="vsentw" placeholder="Entwickler">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <form>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="vsjahr" placeholder="Jahr">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="vsgenr" placeholder="Genre">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-1">
+                    <button type="button" class="btn btn-info btn-block" id="vsadd">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="contab">
+            <br>
+            <div class="row">
+                <div class="col-4 border border-dark"><b>Name</b></div>
+                <div class="col-3 border border-dark"><b>Entwickler</b></div>
+                <div class="col-2 border border-dark"><b>Jahr</b></div>
+                <div class="col-3 border border-dark"><b>Genre</b></div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-danger btn-block" id="surebtn" data-toggle="modal" data-target="#deletemodal"><img src="../img/trash.png"></button>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="deletemodal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Wirklich alles Löschen?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Alle gespeicherten Daten werden verloren gehen.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Abbrechen</button>
+                        <button type="button" class="btn btn-danger" id="deletebtn" data-dismiss="modal" aria-label="Close">Alles Löschen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../lockr/lockr.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/jquery-3.3.1.slim.min.js"></script>
+        <script src="../js/bootstrap/popper.min.js"></script>
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+        <script language="javascript" src="../js/collection.js" type="text/javascript"></script>
+    </body>
+</html>

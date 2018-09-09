@@ -7,7 +7,7 @@ $("#ttb").click(function(){
     for (var i = 0; i < tbinput.length; i++) {
         tboutput.value += tbinput[i].charCodeAt(0).toString(2) + " ";
     }
-    tboutput = tboutput.value
+    tboutput = tboutput.value;
     console.log(tbinput);
     console.log(tboutput);
     $("#textsol").html(tboutput)
