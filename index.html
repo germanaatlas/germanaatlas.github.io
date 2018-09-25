@@ -1,69 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <title>Crypt</title>
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     </head>
     <body>
-
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Text → Binär</h1>
-                </div>
-                <div class="col-12">
-                    <h3>Eingabe:</h3>
-                </div>
-                <div class="col-12">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="textbin" placeholder="Text">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <button type="button" class="btn btn-success btn-block" id="ttb">Übersetzen</button>
-                </div>
-                <div class="col-3">
-                    <a class="btn btn-primary btn-block" data-toggle="collapse" href="#textsolcoll" role="button">
-                        Ergebnisse:
+                    <a class="btn btn-primary btn-block" data-toggle="collapse" href="#projekte" role="button">
+                        Projekte
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="collapse" id="textsolcoll">
-                        <div class="card card-body" id="textsolcard">
-                            <p id="textsol"></p>
-                            <br><br>
+                    <div class="collapse" id="projekte">
+                        <div class="card card-body">
+                            <a href="html/calculator_1.html">Taschenrechner 1</a><br>
+                            <a href="html/calculator_2.html">Taschenrechner 2</a><br>
+                            <a href="html/collection.html">Videospielsammlung</a><br>
+                            <a href="html/collection_2.html">Videospielsammlung 2 [Beta]</a><br>
+                            <a href="html/crypt.html">Binäre Verschlüsselung</a><br>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!--<h1>Binär → Text</h1>
-        <h3>Eingabe:</h3>
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="bintext" placeholder="Binär">
-            </div>
-        </form>
-        <button type="button" class="btn btn-success" id="btt">Übersetzen</button>
-        <h3>Ergebnis:</h3>
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="binsol" placeholder="Lösung">
-            </div>
-        </form>-->
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script language="javascript" type ="text/javascript" src="js/index.js"></script>
+        <script src="../js/bootstrap/jquery-3.3.1.slim.min.js"></script>
+        <script src="../js/bootstrap/popper.min.js"></script>
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
     </body>
 </html>
